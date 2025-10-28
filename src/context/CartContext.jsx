@@ -20,9 +20,29 @@ function cartReducer(state, action) {
         },
       };
     }
+
+    case 'UPDATE_QUANTITY': {
+      const { id, quantity } = action.payload;
+      if (quantity <= 0) {
+        const updated = { ...state.items };
+        delete updated[id];
+        return { ...state, items: updated };
+      }
+      return {
+        ...state,
+        items: {
+          ...state.items,
+          [id]: { ...state.items[id], quantity },
+        },
+      };
+    }
+    default:
+      return state;
     
   }
 }
+
+
 
 
 };
