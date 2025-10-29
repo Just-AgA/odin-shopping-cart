@@ -41,4 +41,12 @@ function cartReducer(state, action) {
   }
 }
 
+export const CartProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(cartReducer, initialState);
+  const totalItems = Object.values(state.items).reduce(
+    (sum, item) => sum + item.quantity,
+    0
+  );
+};
+
 export const useCart = () => useContext(CartContext);
