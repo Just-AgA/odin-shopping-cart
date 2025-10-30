@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #282c34;
+  padding: 1rem 2rem;
+  color: white;
+  align-items: center;
+}
+
+.nav-links a,
+.nav-brand {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
