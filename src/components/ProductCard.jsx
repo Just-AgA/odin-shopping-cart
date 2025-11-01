@@ -11,6 +11,14 @@ const ProductCard = ({ product }) => {
     dispatch({ type: 'ADD_ITEM', payload: { product, quantity } });
     setQuantity(1);
   };
+
+  return (
+    <div className="product-card">
+      <img src={product.image} alt={product.title} />
+      <h4>{product.title}</h4>
+      <p>${product.price.toFixed(2)}</p>
+    </div>
+  );
 };
 
 export default ProductCard;
