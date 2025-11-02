@@ -37,4 +37,8 @@ const ProductCard = ({ product }) => {
   );
 };
 
+ProductCard.propTypes = {
+  product: PropTypes.object.isRequired,
+};
+
 export default ProductCard;
