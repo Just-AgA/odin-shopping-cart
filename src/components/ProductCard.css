@@ -1,0 +1,35 @@
+.product-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.quantity-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.quantity-selector input {
+  width: 50px;
+  text-align: center;
+}
+
+.add-btn {
+  padding: 0.5rem 1rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
